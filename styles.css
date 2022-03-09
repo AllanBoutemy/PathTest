@@ -1,0 +1,31 @@
+body{
+    background-color: black;
+    color:greenyellow;
+    
+    min-height: 100vh;
+}
+ul{
+    list-style: none;
+}
+
+.flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.F_column{
+flex-direction: column;
+}
+
+.yeah{
+    border: 1px solid green;
+    padding: 25vh 25vw;
+
+}
+
+
+img{
+    max-width: 200px;
+
+}
