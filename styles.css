@@ -1,7 +1,6 @@
 body{
     background-color: black;
     color:greenyellow;
-    
     min-height: 100vh;
 }
 ul{
@@ -15,17 +14,16 @@ ul{
 }
 
 .F_column{
-flex-direction: column;
+    flex-direction: column;
 }
 
 .yeah{
     border: 1px solid green;
     padding: 25vh 25vw;
-
+    
 }
-
 
 img{
     max-width: 200px;
-
+    
 }

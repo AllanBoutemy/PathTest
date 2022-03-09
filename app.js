@@ -2,7 +2,7 @@ var showingList = document.getElementById("fileList")
 
 fetch('/test').then(function (response) {
   return response.text();
-}).then(function(html) {
+}).then(function (html) {
 
   // Convert the HTML string into a document object
   var parser = new DOMParser();
@@ -16,7 +16,7 @@ fetch('/test').then(function (response) {
   var paths = [];
   list.forEach(element => {
     if (element.getAttribute("href") != "/")
-    paths.push(element.getAttribute("href"))
+      paths.push(element.getAttribute("href"))
   });
 
   console.log(paths);
