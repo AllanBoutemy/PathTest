@@ -1,6 +1,8 @@
 var showingList = document.getElementById("fileList")
+var url = window.location.pathname.split("index")[0]+"/test";
 
-fetch('/test').then(function (response) {
+
+fetch(url).then(function (response) {
   return response.text();
 }).then(function (html) {
 
@@ -15,7 +17,7 @@ fetch('/test').then(function (response) {
   // create a array of paths 
   var paths = [];
   list.forEach(element => {
-    if (element.getAttribute("href") != "/")
+    if (element.getAttribute("href") != "/PathTest")//the first element is the parent directory
       paths.push(element.getAttribute("href"))
   });
 
